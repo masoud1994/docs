@@ -1,0 +1,19 @@
+
+
+
+				git push command
+============================================================================================
+									Git push command
+
+											
+#in Linux:
+	ssh-keygen -t rsa
+	cat /root/.ssh/id_rsa.pub
+#copy public key in GitLab --> preferences --> SSH Keys
+#in Linux:
+	git init
+	git config --local user.name "Masoud Ghaedi"
+	config --local user.email "mghaedi1994@gmail.com"
+	git remote add origin ssh://git@git.tosan-digital.ir:22/devops/gitlab-template/app-installer.git
+	add .
+	commit -m "Initial Commit"
