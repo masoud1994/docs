@@ -55,31 +55,37 @@ Once the backup is successfully completed, you can restore the VM to test the ba
 
 2. Restore a VM:
 
-In the Recovery Services Vault, select Backup Items under Protected Items.
-Click Azure Virtual Machine.
-You should see a list of all the VMs that have been backed up.
-Select the VM you want to restore and click on Restore VM.
-Choose the Restore Type:
+* In the Recovery Services Vault, select Backup Items under Protected Items.
+* Click Azure Virtual Machine.
+* You should see a list of all the VMs that have been backed up.
+* Select the VM you want to restore and click on Restore VM.
 
-Restore to the original location: This will restore the VM exactly as it was, replacing the current VM (if needed).
-Restore to a new location: If you want to test the restore without affecting the current VM, you can restore it to a new VM. Select this option.
-Choose Restore Point:
+3. Choose the Restore Type:*
 
-Select the Restore Point (the specific backup) that you want to restore from.
-Azure Backup will show the list of available restore points based on your backup policy (daily, weekly, etc.).
-Configure Restore Settings:
+* Restore to the original location: This will restore the VM exactly as it was, replacing the current VM (if needed).
+* Restore to a new location: If you want to test the restore without affecting the current VM, you can restore it to a new VM. select this option.
 
-If you're restoring to a new VM, you can provide a new VM name and select resource group and network settings (such as the virtual network and subnet).
-You can also choose to keep the original disk names or change them for the restored VM.
-Start the Restore:
+4. Choose Restore Point:
 
-Once all the settings are configured, click Restore to begin the process.
-It might take a while depending on the size of the VM and the restore point selected.
-Monitor the Restore Process:
+* Select the Restore Point (the specific backup) that you want to restore from.
+* Azure Backup will show the list of available restore points based on your backup policy (daily, weekly, etc.).
 
-The restoration process will be visible in the Notifications area of the Azure portal.
-You can monitor the status to know when the VM is fully restored.
-Verify the Restored VM:
+5. Configure Restore Settings:
 
-Once the restore is complete, go to the new VM (if you restored to a new VM) and verify that the system and data are restored correctly.
-Test that applications and services on the VM are working as expected.
+* If you're restoring to a new VM, you can provide a new VM name and select resource group and network settings (such as the virtual network and subnet).
+* You can also choose to keep the original disk names or change them for the restored VM.
+
+* Start the Restore:
+
+* Once all the settings are configured, click Restore to begin the process.
+* It might take a while depending on the size of the VM and the restore point selected.
+
+7. Monitor the Restore Process:
+
+* The restoration process will be visible in the Notifications area of the Azure portal.
+* You can monitor the status to know when the VM is fully restored.
+
+8. Verify the Restored VM:
+
+* Once the restore is complete, go to the new VM (if you restored to a new VM) and verify that the system and data are restored correctly.
+* Test that applications and services on the VM are working as expected.
