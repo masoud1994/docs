@@ -8,6 +8,12 @@ Prerequisites:
 
 ## Steps to Backup the Virtual Machine:
 
+* https://learn.microsoft.com/en-us/azure/backup/quick-backup-vm-portal
+* https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability#cost-impact
+* https://learn.microsoft.com/en-us/azure/backup/selective-disk-backup-restore
+* https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms#restore-disks
+* https://learn.microsoft.com/en-us/azure/backup/backup-center-overview
+
 1. Create a Recovery Services Vault (if you don’t already have one):
 
 * Go to the Azure Portal.
